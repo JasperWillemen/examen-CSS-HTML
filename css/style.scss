@@ -2,3 +2,17 @@
 @use "./base/variables" as *;
 @use "./base/fonts";
 @use "./base/mixins" as *;
+
+:root {
+  --darkbrown: #7f7770;
+  --lightbrown: #deb37e;
+  --white: #ffffff;
+  --grey: #54524f;
+}
+
+body {
+  height: 100vh;
+  background-image: url("../images/background1.png");
+  background-size: cover;
+  background-position: top center;
+}
