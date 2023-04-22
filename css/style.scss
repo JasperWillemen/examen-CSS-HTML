@@ -12,22 +12,29 @@
 
 main {
   height: 100vh;
-  background-image: url("../images/background1.png");
+  background-image: url("../images/background2.png"),
+    url("../images/background1.png");
   background-size: cover;
-  background-position: top center;
+  //   background-position: top center;
 }
 
 main .navigation {
   display: flex;
   align-items: center;
   height: 200px;
+  transition: all 300ms;
 }
 
 main .navigation a.menu {
   font-size: 9.6rem;
   margin-right: auto;
   color: var(--darkbrown);
-  margin-left: 126px;
+  margin-left: 110px;
+  transition: all 300ms;
+}
+
+main .navigation a.menu:hover {
+  color: var(--lightbrown);
 }
 
 .navigation nav ul {
@@ -52,6 +59,13 @@ main .navigation a.menu {
 
 .navigation nav ul li a {
   text-decoration: none;
+  color: var(--darkbrown);
+  transition: all 300ms;
+}
+
+.navigation nav ul li a:hover {
+  background-color: var(--white);
+  border-radius: 5px;
 }
 
 main .middle {
@@ -93,4 +107,24 @@ main .text p {
 
 main .slider {
   align-self: center;
+  margin-right: 20px;
+}
+
+main .slider .slidernav li {
+  padding: 9px;
+  margin-right: 127px;
+}
+
+main .slider .slidernav li a {
+  width: 12px;
+  height: 12px;
+  display: block;
+  border-radius: 50%;
+  background-clip: padding-box;
+  border: 2px solid var(--white);
+  transition: 300ms;
+}
+
+main .slider .slidernav li a.active {
+  background-color: var(--white);
 }
