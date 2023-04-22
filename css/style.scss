@@ -10,9 +10,87 @@
   --grey: #54524f;
 }
 
-body {
+main {
   height: 100vh;
   background-image: url("../images/background1.png");
   background-size: cover;
   background-position: top center;
+}
+
+main .navigation {
+  display: flex;
+  align-items: center;
+  height: 200px;
+}
+
+main .navigation a.menu {
+  font-size: 9.6rem;
+  margin-right: auto;
+  color: var(--darkbrown);
+  margin-left: 126px;
+}
+
+.navigation nav ul {
+  display: flex;
+  margin-right: 100px;
+}
+
+.navigation nav ul::before {
+  content: "";
+  width: 123px;
+  height: 123px;
+  background: url("../images/logo.png") no-repeat;
+  margin-right: 75px;
+}
+
+.navigation nav ul li {
+  font-family: "Open Sans";
+  font-weight: 700;
+  font-size: 2.25rem;
+  margin: auto 60px;
+}
+
+.navigation nav ul li a {
+  text-decoration: none;
+}
+
+main .middle {
+  display: flex;
+}
+
+main .text {
+  margin-left: 126px;
+  margin-right: auto;
+}
+
+main .text h1 {
+  font-family: "Open Sans";
+  font-weight: 800;
+  font-size: 11.25rem;
+  line-height: 113px;
+  color: var(--lightbrown);
+  margin-bottom: 31px;
+}
+
+main .text h2 {
+  font-family: "Open Sans";
+  font-weight: 700;
+  font-size: 3.6rem;
+  font-style: italic;
+  line-height: 25px;
+  color: var(--lightbrown);
+  margin-bottom: 34px;
+}
+
+main .text p {
+  font-family: "Open Sans";
+  font-size: 2.025rem;
+  line-height: 25px;
+  color: var(--grey);
+  font-style: italic;
+  max-width: 337px;
+}
+
+main .slider {
+  align-self: center;
 }
