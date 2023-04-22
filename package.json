@@ -10,7 +10,7 @@
     "build": "vite build",
     "preview": "vite preview --open --host",
     "predeploy": "npm run build",
-    "deploy": "surge ./dist examen-css-html-jasper-willemen.sh"
+    "deploy": "surge ./dist examen-css-html-jasper-willemen.surge.sh"
   },
   "keywords": [],
   "author": "",
