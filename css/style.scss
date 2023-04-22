@@ -19,7 +19,6 @@ main {
   background-image: url("../images/background2.png"),
     url("../images/background1.png");
   background-size: cover;
-  //   background-position: top center;
 }
 
 main .navigation {
@@ -142,7 +141,7 @@ main .slider .slidernav li a.active {
   background-color: var(--white);
 }
 
-main .end p > a {
+main .end a {
   font-family: "Open Sans";
   font-weight: 700;
   font-size: 2.074rem;
